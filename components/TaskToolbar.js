@@ -2,13 +2,16 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import {Button, AppBar, HStack, IconButton} from '@react-native-material/core';
 import IconIon from 'react-native-vector-icons/Ionicons';
-import IconFont from 'react-native-vector-icons/FontAwesome5';
+import IconFont5 from 'react-native-vector-icons/FontAwesome5';
+import IconFont from 'react-native-vector-icons/FontAwesome';
 
 const TaskToolbar = () => {
   return (
     <AppBar
       title="Coins: 2"
-      leading={props => <IconFont name="coins" {...props} />}
+      leading={props => (
+        <IconFont5 name="coins" {...props} stye={{color: 'Secondary'}} />
+      )}
       variant="bottom"
       style={{
         position: 'absolute',
@@ -27,7 +30,7 @@ const TaskToolbar = () => {
             color="white"
             tintColor="#EEBC1D"
             backgroundColor="white"
-            leading={props => <IconIon name="checkmark-circle" {...props} />}
+            leading={props => <IconFont name="trophy" {...props} />}
           />
           <Button
             // variant="outlined"
