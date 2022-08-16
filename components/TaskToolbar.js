@@ -6,7 +6,7 @@ const TaskToolbar = () => {
   return (
     <AppBar
       variant="bottom"
-      style={{position: 'absolute', start: 0, end: 0, bottom: 0}}
+      style={{position: 'absolute', start: 0, end: 0, bottom: 0, height: 60}}
     />
   );
 };
