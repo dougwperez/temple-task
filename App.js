@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import TaskToolbar from './TaskToolbar';
-import BuilderToolbar from './BuilderToolbar';
+import TaskToolbar from './components/TaskToolbar';
+import BuilderToolbar from './components/BuilderToolbar';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -59,16 +59,14 @@ const App: () => Node = () => {
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    flex: 1,
   };
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView>
-        {/* <Text>Hello</Text> */}
-        <BuilderToolbar />
-        <TaskToolbar />
-      </ScrollView>
+      {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} /> */}
+      <BuilderToolbar />
+      <TaskToolbar />
     </SafeAreaView>
   );
 };
