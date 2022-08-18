@@ -27,6 +27,9 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {Provider} from 'react-redux';
+import setupStore from './store';
+import Builder from './components/Builder';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -62,12 +65,31 @@ const App: () => Node = () => {
     flex: 1,
   };
 
+  const store = setupStore();
+
   return (
-    <SafeAreaView style={backgroundStyle}>
-      {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} /> */}
-      <BuilderToolbar />
-      <TaskToolbar />
-    </SafeAreaView>
+    <Provider store={store}>
+      <SafeAreaView style={backgroundStyle}>
+        <BuilderToolbar />
+
+        {/* <Scene
+          // store={setupStore}
+          brickColor={color}
+          objects={bricks}
+          mode={mode}
+          grid={gridVisible}
+          dimensions={dimensions}
+          // shifted={utilsOpen}
+          removeObject={removeBrick}
+          addObject={addBrick}
+          updateObject={updateBrick}
+          credits={this.state.credits}
+          patchDownTotalCredits={this.patchDownTotalCredits}
+        /> */}
+
+        <TaskToolbar />
+      </SafeAreaView>
+    </Provider>
   );
 };
 
@@ -91,3 +113,6 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+// export default compose(connect(mapStateToProps, mapDispatchToProps))(App);
+// export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,6 +1,6 @@
 import {createStore, applyMiddleware} from 'redux';
 
-import reducer from 'reducer';
+import reducer from './reducer';
 
 export default function setupStore(initialState) {
   return createStore(
