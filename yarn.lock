@@ -2547,6 +2547,11 @@
     "normalize-path" "^3.0.0"
     "picomatch" "^2.0.4"
 
+"app-root-path@^2.1.0":
+  "integrity" "sha512-91IFKeKk7FjfmezPKkwtaRvSpnUc4gDwPAjA1YZ9Gn0q0PPeW+vbeUsZuyDwjI7+QTHhcLen2v25fi/AmhvbJA=="
+  "resolved" "https://registry.npmjs.org/app-root-path/-/app-root-path-2.2.1.tgz"
+  "version" "2.2.1"
+
 "appdirsjs@^1.2.4":
   "integrity" "sha512-Quji6+8kLBC3NnBeo14nPDq0+2jUs5s3/xEye+udFHumHhRk4M7aAMXp/PBJqkKYGuuyR9M/6Dq7d2AViiGmhw=="
   "resolved" "https://registry.npmjs.org/appdirsjs/-/appdirsjs-1.2.7.tgz"
@@ -2954,6 +2959,11 @@
   "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   "version" "6.3.0"
 
+"camelize@^1.0.0":
+  "integrity" "sha512-W2lPwkBkMZwFlPCXhIlYgxu+7gC/NUlCtdK652DAJ1JdgV0sTrvuPFshNPrFa1TY2JOkLhgdeEBplB4ezEa+xg=="
+  "resolved" "https://registry.npmjs.org/camelize/-/camelize-1.0.0.tgz"
+  "version" "1.0.0"
+
 "caniuse-lite@^1.0.30001370":
   "integrity" "sha512-I27WhtOQ3X3v3it9gNs/oTpoE5KpwmqKR5oKPA8M0G7uMXh9Ty81Q904HpKUrM30ei7zfcL5jE7AXefgbOfMig=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001376.tgz"
@@ -3267,6 +3277,44 @@
     "path-key" "^3.1.0"
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
+
+"css-color-keywords@^1.0.0":
+  "integrity" "sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg=="
+  "resolved" "https://registry.npmjs.org/css-color-keywords/-/css-color-keywords-1.0.0.tgz"
+  "version" "1.0.0"
+
+"css-mediaquery@^0.1.2":
+  "integrity" "sha512-COtn4EROW5dBGlE/4PiKnh6rZpAPxDeFLaEEwt4i10jpDMFt2EhQGS79QmmrO+iKCHv0PU/HrOWEhijFd1x99Q=="
+  "resolved" "https://registry.npmjs.org/css-mediaquery/-/css-mediaquery-0.1.2.tgz"
+  "version" "0.1.2"
+
+"css-to-react-native-transform@^1.8.1":
+  "integrity" "sha512-darzotx5xx+Q0bzASkvNBasztLCssNerzf9jpMZx0H4CTY6J/y2Wh50ZtYAJ3FmESEux1bJcGa6T0zfISTuFqw=="
+  "resolved" "https://registry.npmjs.org/css-to-react-native-transform/-/css-to-react-native-transform-1.9.0.tgz"
+  "version" "1.9.0"
+  dependencies:
+    "css" "^2.2.4"
+    "css-mediaquery" "^0.1.2"
+    "css-to-react-native" "^2.3.0"
+
+"css-to-react-native@^2.3.0":
+  "integrity" "sha512-VOFaeZA053BqvvvqIA8c9n0+9vFppVBAHCp6JgFTtTMU3Mzi+XnelJ9XC9ul3BqFzZyQ5N+H0SnwsWT2Ebchxw=="
+  "resolved" "https://registry.npmjs.org/css-to-react-native/-/css-to-react-native-2.3.2.tgz"
+  "version" "2.3.2"
+  dependencies:
+    "camelize" "^1.0.0"
+    "css-color-keywords" "^1.0.0"
+    "postcss-value-parser" "^3.3.0"
+
+"css@^2.2.4":
+  "integrity" "sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw=="
+  "resolved" "https://registry.npmjs.org/css/-/css-2.2.4.tgz"
+  "version" "2.2.4"
+  dependencies:
+    "inherits" "^2.0.3"
+    "source-map" "^0.6.1"
+    "source-map-resolve" "^0.5.2"
+    "urix" "^0.1.0"
 
 "cssom@^0.4.4":
   "integrity" "sha512-p3pvU7r1MyyqbTk+WbNJIgJjG2VmTIaB10rI93LzVPrmDJKkzKYMtxxyAvQXR/NS6otuzveI7+7BBq3SjBS2mw=="
@@ -6515,6 +6563,11 @@
   "resolved" "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   "version" "0.1.1"
 
+"postcss-value-parser@^3.3.0":
+  "integrity" "sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ=="
+  "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz"
+  "version" "3.3.1"
+
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
@@ -6678,6 +6731,15 @@
   dependencies:
     "prop-types" "^15.6.2"
     "react-native-iphone-x-helper" "^1.0.3"
+
+"react-native-less-transformer@^1.3.0":
+  "integrity" "sha512-S61HlHpOe5m00eL7M6zKI5M3upAfs26efI/PQebdgbiDn05Hk3hm7O5Ipj2uyy6cE9Xm/9hf73XY1arDpfJ5xA=="
+  "resolved" "https://registry.npmjs.org/react-native-less-transformer/-/react-native-less-transformer-1.3.0.tgz"
+  "version" "1.3.0"
+  dependencies:
+    "app-root-path" "^2.1.0"
+    "css-to-react-native-transform" "^1.8.1"
+    "semver" "^5.6.0"
 
 "react-native-ratings@8.0.4":
   "integrity" "sha512-Xczu5lskIIRD6BEdz9A0jDRpEck/SFxRqiglkXi0u67yAtI1/pcJC76P4MukCbT8K4BPVl+42w83YqXBoBRl7A=="
@@ -7315,7 +7377,7 @@
     "source-map-resolve" "^0.5.0"
     "use" "^3.1.0"
 
-"source-map-resolve@^0.5.0":
+"source-map-resolve@^0.5.0", "source-map-resolve@^0.5.2":
   "integrity" "sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw=="
   "resolved" "https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.5.3.tgz"
   "version" "0.5.3"

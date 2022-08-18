@@ -1,0 +1,44 @@
+// ----------------
+// COLOUR PICKER
+//
+// Component File
+// ----------------
+
+@import "~styles/vars";
+
+@brick-height: 60px;
+@tip-size: 7px;
+
+:local(.colorPicker) {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+:local(.brick) {
+  width: 35px;
+}
+
+:local(.picker) {
+  position: absolute;
+  top: ~"calc(100% + 35px)";
+  left: ~"calc(50% - 15px)";
+  display: none;
+  border-right: pink 12px;
+}
+
+:local(.visible) {
+  position: absolute;
+  top: (@brick-height + @base-margin + 5px);
+  left: -(@base-margin / 2);
+  // composes: picker;
+  border-right: pink 12px;
+  transform: translateY(-15px);
+
+  // display: block;
+  // transform: scaleX(0);
+}
