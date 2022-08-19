@@ -30,6 +30,7 @@ import {
 import {Provider} from 'react-redux';
 import setupStore from './store';
 import Builder from './components/Builder';
+import WKWebView from 'react-native-wkwebview-reborn';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
